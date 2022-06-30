@@ -13,6 +13,7 @@ char files[1000][300]; //the name of the files in the selected directory will be
 char ch; //character for different commands, mostly found in the switch loop
 int y; //console cursor, as well as what file im selecting
 int i=0;
+
 //stuff that work but i dont understand how
 DIR * d;
 struct dirent * dir;
@@ -200,17 +201,3 @@ int main(int argc, char ** argv){
     system("cls");
     return 0;
 }
-/*
-Show(".");
-SetConsoleTextAttribute(h, INPUT_COLOR);
-cin.get(input, 300);
-cin.get();
-SetConsoleTextAttribute(h, 7);
-strcpy(command, "del \"");
-strcat(command, input);
-strcat(command, "\"");
-system(command);
-Show(".");
-SetConsoleCursorPosition(h, {0, 0});
-break;
-*/
