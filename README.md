@@ -1,7 +1,7 @@
 # Terminal-Explorer-for-Windows
 ## A file explorer with a terminal interface
 ### What is it?
-The terminal explorer, also knows as CEX(short for command explorer) is an imitation of the good-old Windows Explorer, except it runs on a terminal, like the Command Prompt for example.
+The terminal explorer, also knows as CEX (short for command explorer) is an imitation of the good-old Windows Explorer, except it runs on a terminal, like the Command Prompt for example.
 ### How to use it?
 You can get started with CEX by downloading the files from this repository, then installing the `cex.exe` file.
 After the installation, you can run CEX by typing `cex` in the command prompt.
