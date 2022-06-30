@@ -8,7 +8,7 @@ After the installation, you can run CEX by typing `cex` in the command prompt.
 By default, it will show you the directory you opened the program from.
 However, type the `help` argument, and a list of available commands will show, and the program will stop.
 The commands are then instantly executed after you press the corresponding key.
-![](https://ibb.co/FWz2Ymj)
+![example](https://ibb.co/FWz2Ymj)
 ### Coming soon:
 I am planning to add new features in the future, such as:
 * *Custom colors:* the folders and input text are colorated, but being able to change those colors is a nice touch
