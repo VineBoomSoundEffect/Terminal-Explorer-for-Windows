@@ -13,6 +13,7 @@ char files[1000][300]; //the name of the files in the selected directory will be
 char ch; //character for different commands, mostly found in the switch loop
 int y; //console cursor, as well as what file im selecting
 int i=0;
+char validation; //to secure accidental deletion of a file
 
 //stuff that work but i dont understand how
 DIR * d;
@@ -25,6 +26,7 @@ int INPUT_COLOR = 9;
 int k; //return value of Show(), to enter folder or open file
 char input[300]; //string for input mode
 char command[350]; //string to execute a command
+char deletefile[350]; //string to warn user about deleting a file
 
 //FUNCTION TO OUTPUT IN DIFFERENT COLORS
 void Print(int color, string str){
@@ -185,11 +187,18 @@ int main(int argc, char ** argv){
                     SetConsoleTextAttribute(h, 7);
                 }
                 else{
-                    strcpy(command, "del \"");
-                    strcat(command, files[y]);
-                    strcat(command, "\"");
+					strcpy(deletefile, files[y]);
+					strcat(deletefile, ", Are you sure you want to delete this file? (Y/N)?");
+					Print(6, deletefile);
+					cin.get(validation);
+					cin.get();
+					if(validation=='y' || validation=='Y'){
+						strcpy(command, "del \"");
+						strcat(command, files[y]);
+						strcat(command, "\"");
 
-                    system(command);
+						system(command);
+					}
                 }
                 Show(".");
                 y = 0;
