@@ -90,7 +90,6 @@ void Compiler(char temp[255]){
 	strcat(path_to_template, ".tex");
 	ifstream fin(path_to_template);
 	while(fin >> instruction){
-			cout << "\n";
 		if(!strcmp(instruction, "dir")){
 			fin >> name;
 			strcpy(command, "mkdir ");
