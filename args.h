@@ -21,6 +21,7 @@ if(argc >= 2){
 			strcat(command, argv[2]);
 			strcat(command, ".tex\"");
 			system(command);
+			cout << "The template has been successfuly created";
 		}
 		else{
 			cout << "The path where the templates are stored is:\n";
