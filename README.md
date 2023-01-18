@@ -6,7 +6,7 @@ The terminal explorer (TEX for short), is an imitation of the good-old Windows E
 You can get started with TEX by downloading the files from this repository, then installing the `tex.exe` file.
 After the installation, you can run TEX by typing `tex` in the command prompt.
 By default, it will show you the directory you opened the program from.
-However, type the `help` argument, and a list of available commands will show, and the program will stop.
+However, type the `-help` argument, and a list of available commands will show, and the program will stop.
 The commands are then instantly executed after you press the corresponding key.
 ### Coming soon:
 I am planning to add new features in the future, such as:
